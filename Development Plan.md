@@ -165,7 +165,7 @@ src/
 - [x] Set up project folder structure
 - [x] Configure absolute imports (@/ path mapping)
 - [x] Create initial landing page with RiseTrack branding
-- [ ] Install and configure ShadCN UI
+- [x] Install and configure ShadCN UI
 
 **Days 3-4: Firebase Setup**
 - [x] Create Firebase project
@@ -176,12 +176,12 @@ src/
 - [x] Create Firestore collections structure
 
 **Days 5-7: Core UI Components**
-- [ ] Install and configure Zustand for state management
-- [ ] Set up basic layout components (Header, Sidebar, Footer)
-- [ ] Create reusable UI components using ShadCN
-- [ ] Implement responsive navigation
-- [ ] Set up routing structure
-- [ ] Create basic loading and error states
+- [x] Install and configure Zustand for state management
+- [x] Set up basic layout components (Header, Sidebar, Footer)
+- [x] Create reusable UI components using ShadCN
+- [x] Implement responsive navigation
+- [x] Set up routing structure
+- [x] Create basic loading and error states
 
 ### Week 2: Authentication & Core Layout
 **Days 8-10: Authentication System**

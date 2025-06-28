@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { AppLayout } from "@/components/layout";
-import { AuthProvider, ThemeProvider } from "@/components/providers";
+import { AuthProvider, ThemeProvider, HydrationProvider } from "@/components/providers";
 import { Toaster } from "@/components/ui/sonner";
 import { ClientOnly } from "@/components/ui/client-only";
 
@@ -32,14 +32,16 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <body className="font-sans antialiased bg-background text-foreground">
         <ClientOnly>
-          <ThemeProvider>
-            <AuthProvider>
-              <AppLayout>
-                {children}
-              </AppLayout>
-              <Toaster />
-            </AuthProvider>
-          </ThemeProvider>
+          <HydrationProvider>
+            <ThemeProvider>
+              <AuthProvider>
+                <AppLayout>
+                  {children}
+                </AppLayout>
+                <Toaster />
+              </AuthProvider>
+            </ThemeProvider>
+          </HydrationProvider>
         </ClientOnly>
       </body>
     </html>
